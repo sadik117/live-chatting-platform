@@ -6,7 +6,7 @@ export const getSocket = (): Socket => {
   if (!socket) {
     const token = typeof window !== 'undefined' ? localStorage.getItem('chat_token') : null;
 
-    socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:5000', {
+    socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'https://chat-sphere-server-xq59.onrender.com', {
       withCredentials: true,
       auth: { token },
       autoConnect: false,

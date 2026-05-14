@@ -60,7 +60,7 @@ export default function RoomSidebar({ room }: Props) {
                 <Avatar className="h-6 w-6">
                    {room.owner.avatar ? (
                     <AvatarImage
-                      src={room.owner.avatar.startsWith('http') ? room.owner.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api').replace('/api', '')}${room.owner.avatar}`}
+                      src={room.owner.avatar.startsWith('http') ? room.owner.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'https://chat-sphere-server-xq59.onrender.com/api').replace('/api', '')}${room.owner.avatar}`}
                       className="object-cover"
                     />
                   ) : null}
@@ -98,7 +98,7 @@ export default function RoomSidebar({ room }: Props) {
                   <Avatar className="h-8 w-8 bg-gradient-to-br from-indigo-500 to-purple-500 text-xs font-bold text-white shadow-sm">
                     {user.avatar ? (
                       <AvatarImage
-                        src={user.avatar.startsWith('http') ? user.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api').replace('/api', '')}${user.avatar}`}
+                        src={user.avatar.startsWith('http') ? user.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'https://chat-sphere-server-xq59.onrender.com/api').replace('/api', '')}${user.avatar}`}
                         alt={user.username}
                         className="object-cover"
                       />

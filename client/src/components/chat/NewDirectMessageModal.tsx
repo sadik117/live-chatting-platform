@@ -14,7 +14,7 @@ function getAvatarUrl(avatar: string | null) {
   if (!avatar) return null;
   return avatar.startsWith('http')
     ? avatar
-    : `${(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api').replace('/api', '')}${avatar}`;
+    : `${(process.env.NEXT_PUBLIC_API_URL || 'https://chat-sphere-server-xq59.onrender.com/api').replace('/api', '')}${avatar}`;
 }
 
 function getInitials(username: string) {

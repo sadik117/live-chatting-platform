@@ -92,7 +92,10 @@ export default function RegisterPage() {
           <motion.div
             key={i}
             className="absolute h-1 w-1 rounded-full bg-slate-400/30 dark:bg-white/20"
-            initial={{ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight }}
+            initial={{ 
+              x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0, 
+              y: typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0 
+            }}
             animate={{
               y: [null, -30, 30, -20, 20, 0],
               x: [null, 20, -20, 30, -30, 0],

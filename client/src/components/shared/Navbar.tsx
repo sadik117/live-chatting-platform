@@ -51,7 +51,7 @@ export default function Navbar() {
               <Avatar className="h-9 w-9 bg-gradient-to-br from-indigo-500 to-purple-500 text-xs font-bold text-white shadow-sm border border-border/50">
                 {user.avatar ? (
                   <AvatarImage
-                    src={user.avatar.startsWith('http') ? user.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api').replace('/api', '')}${user.avatar}`}
+                    src={user.avatar.startsWith('http') ? user.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'https://chat-sphere-server-xq59.onrender.com/api').replace('/api', '')}${user.avatar}`}
                     alt={user.username}
                     className="object-cover"
                   />
