@@ -24,7 +24,7 @@ cd server
 cp .env.example .env      # Fill in your NeonDB URLs + JWT_SECRET
 npm install
 npx prisma migrate dev --name init
-npm run dev               # Starts on http://localhost:5000
+npm run dev               # Starts on https://chat-sphere-server-xq59.onrender.com
 ```
 
 ### 3. Client setup

@@ -34,8 +34,8 @@ services:
       - /app/.next
     environment:
       - NODE_ENV=development
-      - NEXT_PUBLIC_API_URL=http://localhost:5000/api
-      - NEXT_PUBLIC_SOCKET_URL=http://localhost:5000
+      - NEXT_PUBLIC_API_URL=https://chat-sphere-server-xq59.onrender.com/api
+      - NEXT_PUBLIC_SOCKET_URL=https://chat-sphere-server-xq59.onrender.com
       - WATCHPACK_POLLING=true
     command: npm run dev
     ports:
